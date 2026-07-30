@@ -61,7 +61,9 @@ a {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: clamp(20px, 4vw, 44px);
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(12px, 4vw, 44px);
 }
 
 .site-nav__mark {
@@ -440,6 +442,12 @@ main {
   }
   .about-photo {
     width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-nav__mark {
+    display: none;
   }
 }
 
