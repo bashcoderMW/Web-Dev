@@ -68,7 +68,7 @@ a {
 
 .site-nav__mark {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   letter-spacing: 0.14em;
   color: var(--paper);
   opacity: 0.55;
@@ -152,7 +152,7 @@ a {
 
 .hero__eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--taupe);
@@ -253,7 +253,7 @@ a {
   display: block;
   margin-top: 8px;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.85rem;
   letter-spacing: 0.05em;
   color: var(--taupe);
 }
