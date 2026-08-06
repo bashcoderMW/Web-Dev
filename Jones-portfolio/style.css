@@ -316,7 +316,7 @@ main {
 .section h3 {
   font-family: var(--font-display);
   font-size: 1.2rem;
-  margin: 0 0 8px;
+  margin: 32px 0 8px;
 }
 
 .section p {
@@ -435,6 +435,79 @@ main {
   text-decoration: none;
   border-bottom: 1px solid var(--ink);
 }
+
+.contact-form {
+  margin: 24px 0 0;
+  max-width: 480px;
+}
+
+.contact-form fieldset {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px 24px;
+}
+
+.contact-form legend {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+  padding: 0 8px;
+}
+
+.contact-form label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  margin: 16px 0 6px;
+  color: var(--ink);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  background:#fff;
+  color: var(--ink);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--teal-bright);
+  outline-offset: 2px;
+}
+
+.contact-form .error-message {
+  display: block;
+  color: #b3261e;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  min-height: 1.2em;
+} 
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px 22px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--teal);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: var(--teal-bright);
+}
+
 
 @media (max-width: 700px) {
   .about-grid {
