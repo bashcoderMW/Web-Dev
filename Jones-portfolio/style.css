@@ -52,7 +52,7 @@ a {
   z-index: 50;
   display: flex;
   justify-content: center;
-  padding: 22px 24px;
+  padding: 24px 24px;
   background: rgba(19, 19, 19, 0.72);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -181,7 +181,7 @@ a {
   font-weight: 700;
   font-size: clamp(2.4rem, 6vw, 4.2rem);
   letter-spacing: -0.01em;
-  margin: 0 0 14px;
+  margin: 0 0 16px;
 }
 
 .hero p.hero__role {
@@ -194,7 +194,7 @@ a {
 
 .hero__cta {
   display: inline-flex;
-  gap: 14px;
+  gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -311,7 +311,7 @@ main {
 #intro-heading {
   color: var(--teal);
   border-left: 3px solid var(--teal);
-  padding-left: 14px;
+  padding-left: 16px;
 }
 .section h3 {
   font-family: var(--font-display);
@@ -372,9 +372,9 @@ main {
 }
 
 .project-card__links {
-  margin-top: 14px;
+  margin-top: 16px;
   display: flex;
-  gap: 14px;
+  gap: 16px;
 }
 
 .project-card__links a {
@@ -413,7 +413,7 @@ main {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   border: 1px solid var(--line);
-  padding: 6px 14px;
+  padding: 8px 16px;
   border-radius: 999px;
   color: var(--ash);
 }
