@@ -64,6 +64,8 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: clamp(12px, 4vw, 44px);
+  width: 100%;
+  max-width: 980px;
 }
 
 .site-nav__mark {
@@ -115,6 +117,22 @@ a {
 
 .site-nav a[aria-current="page"]::after {
   width: 100%;
+}
+
+.nav-weather{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--paper);
+  opacity: 0.85;
+}
+
+.nav-weather__icon {
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 /* ==========================================================================
@@ -324,6 +342,23 @@ main {
   max-width: 62ch;
 }
 
+.weather-widget {
+  max-width: 980px;
+  margin: 32px auto 0;
+  padding: 20px 24px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.weather-widget__status {
+  margin: 0;
+  color: var(--ash);
+}
+
 /* Project grid (work.html) */
 .project-grid {
   list-style: none;
@@ -384,6 +419,38 @@ main {
   color: var(--ink);
   border-bottom: 1px solid var(--ink);
 }
+
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 24px;
+}
+
+.project-filter__button {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.project-filter__button:hover {
+  background: var(--paper-dim);
+}
+
+.project-filter__button--active {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+}
+
 
 /* About page */
 .about-grid {

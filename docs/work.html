@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -17,6 +18,11 @@
       <a href="index.html">Home</a>
       <a href="work.html" aria-current="page">Work</a>
       <a href="about.html">About</a>
+         <span class="nav-weather" aria-live="polite">
+        <span class="nav-weather__city">Boston</span>
+        <span class="nav-weather__icon" aria-hidden="true">—</span>
+        <span class="nav-weather__temp">--°F</span>
+      </span>
     </nav>
   </header>
 
@@ -26,10 +32,15 @@
       <h1>Work</h1>
       <h2 id="work-heading">Projects &amp; milestones</h2>
       <p>Coursework from the Web Development class, added as each assignment is finished.</p>
-
+      <div class="project-filter" role="group" aria-label="Filter projects by type">
+        <button class="project-filter__button project-filter__button--active" data-filter="all">All</button>
+        <button class="project-filter__button" data-filter="project-1">Project 1</button>
+        <button class="project-filter__button" data-filter="project-2">Project 2</button>
+        <button class="project-filter__button" data-filter="project-3">Project 3</button>
+      </div>
       <ul class="project-grid">
 
-        <li class="project-card">
+        <li class="project-card" data-category="project-1">
           <div class="project-card__thumb" style="--thumb-a:#4a4038; --thumb-b:#1c1a17;"></div>
           <div class="project-card__body">
             <span class="project-card__tag">Project 1</span>
@@ -42,7 +53,7 @@
           </div>
         </li>
 
-        <li class="project-card">
+        <li class="project-card" data-category="project-2">
           <div class="project-card__thumb" style="--thumb-a:#3c4a44; --thumb-b:#161d1a;"></div>
           <div class="project-card__body">
             <span class="project-card__tag">Project 2</span>
@@ -55,7 +66,7 @@
           </div>
         </li>
 
-        <li class="project-card">
+        <li class="project-card" data-category="project-3">
           <div class="project-card__thumb" style="--thumb-a:#3a3f4a; --thumb-b:#15171d;"></div>
           <div class="project-card__body">
             <span class="project-card__tag">Project 3</span>

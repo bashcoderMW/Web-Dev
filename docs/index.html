@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -19,9 +20,13 @@
       <a href="index.html" aria-current="page">Home</a>
       <a href="work.html">Work</a>
       <a href="about.html">About</a>
+      <span class="nav-weather" aria-live="polite">
+        <span class="nav-weather__city">Boston</span>
+        <span class="nav-weather__icon" aria-hidden="true">—</span>
+        <span class="nav-weather__temp">--°F</span>
+      </span>
     </nav>
   </header>
-
   <main>
     <section class="hero">
       <div class="hero__monogram" aria-hidden="true">TJ</div>
@@ -61,6 +66,7 @@
         </div>
       </div>
     </section>
+
 
     <section class="section section--tight" aria-labelledby="intro-heading">
       <p class="section__eyebrow">Currently</p>

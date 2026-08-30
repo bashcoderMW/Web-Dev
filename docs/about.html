@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -17,6 +18,11 @@
       <a href="index.html">Home</a>
       <a href="work.html">Work</a>
       <a href="about.html" aria-current="page">About</a>
+         <span class="nav-weather" aria-live="polite">
+        <span class="nav-weather__city">Boston</span>
+        <span class="nav-weather__icon" aria-hidden="true">—</span>
+        <span class="nav-weather__temp">--°F</span>
+      </span>
     </nav>
   </header>
 
@@ -55,20 +61,20 @@
           </ul>
 
           <h3>Send me a Message</h3>
-          <form action="#" method="POST" class="contact-form">
+          <form action="#" method="POST" class="contact-form" id="contact-form">
             <fieldset>
               <legend>Contact Form</legend>
 
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required aria-describedby="name-error" />
+            <input type="text" id="name" name="name" aria-describedby="name-error" />
             <span id="name-error" class="error-message" role="alert"></span>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required aria-describedby="email-error" />
+            <input type="email" id="email" name="email" aria-describedby="email-error" />
             <span id="email-error" class="error-message" role="alert"></span>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required aria-describedby="message-error"></textarea>
+            <textarea id="message" name="message" rows="4" aria-describedby="message-error"></textarea>
             <span id="message-error" class="error-message" role="alert"></span>
 
             <button type="submit">Send</button>
